@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+	//二分法查找数组中的元素
+	
+	 
+	int arr[] = {1,2,3,4,5,6,8,9,10,11}; //创建一个数组
+	int i=0;
+	int sz = sizeof(arr)/sizeof(arr[0]);
+	int j = sz-1;
+	int k=7;
+	int z=(i+j)/2;
+	while(i<=j)
+	{
+		if(k>arr[z])
+	    {
+		    i=z+1;
+	        z=(i+j)/2;
+	    }
+	    else if(k<arr[z])
+	    {
+	    	j=z-1;
+	    	z=(i+j)/2;
+		}
+		else
+		{
+		printf("找到了，下标是%d",z);
+		break;
+	    }
+	}
+    if(i>j)
+	printf("找不到\n"); 
+}
