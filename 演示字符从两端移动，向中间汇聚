@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<string.h>
+#include<windows.h> //休息函数 
+#include<stdlib.h> //清空函数 
+int main()
+{
+	char arr1[] = "welcome to bit!!!!!!";
+	char arr2[] = "####################";
+    int left = 0;
+    int right = strlen(arr1)-1;
+    int i,j;
+	for(i=0;i<=right/2;i++)
+	{
+		arr2[i]=arr1[i];
+		arr2[right-i]=arr1[right-i];
+		for(j=0;j<=right;j++)
+		{
+			printf("%c",arr2[j]);
+		}
+		printf("\n");
+		Sleep(1000);
+		//休息一秒
+		system("cls"); //执行命令的一个函数，清空屏幕 
+	}
+	printf("%s\n",arr2); 
+}
+
+//另一种写法：
+#include<stdio.h>
+#include<string.h>
+#include<windows.h> //休息函数 
+#include<stdlib.h> //清空函数 
+int main()
+{
+	char arr1[] = "welcome to bit!!!!!!";
+	char arr2[] = "####################";
+    int left = 0;
+    int right = strlen(arr1)-1;
+    while(left<=right)
+    {
+    arr2[left]=arr1[left];
+    arr2[right]=arr1[right];
+    left++;
+    right--;
+    printf("%s\n",arr2);
+    Sleep(1000);
+		//休息一秒
+		system("cls"); //执行命令的一个函数，清空屏幕 
+    }
+printf("%s\n",arr2);
+}
