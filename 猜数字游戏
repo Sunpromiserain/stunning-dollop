@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h> 
+
+
+//猜数字游戏 
+//int main()
+//{
+//	int a;
+//	int s=1;
+//	int num;
+//	srand((unsigned)time(NULL));
+//	while(s==1)
+//	{
+//	printf("请选择：\n1:开始游戏 2：结束游戏");
+//	scanf("%d",&s); 
+//	switch(s)
+//	{
+//	case 1 : 
+//	{
+//	a = rand()%100;   //产生0到99的随机数
+//	while(num != a)
+//	{
+//	printf("请输入一个数\n");
+//	scanf("%d",&num);
+//	if(num>a)
+//	{
+//		printf("猜大了\n");	
+//	}
+//	else if(num<a)
+//	{
+//		printf("猜小了\n");
+//	}
+//    }
+//    printf("猜对了\n");
+//    
+//    } break;
+//    case 2 :
+//    	break;
+//    }
+//    }
+//}
